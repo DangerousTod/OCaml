@@ -89,8 +89,8 @@ rule token = parse
 | '.'													{ !line_number, Dot }
 | ';'													{ !line_number, Semi }
 | '~'													{ !line_number, Tilde }
-| '['													{ !line_number, Lsqbr }
-| ']'													{ !line_number, Rsqbr }
+| '['													{ !line_number, Lsqb }
+| ']'													{ !line_number, Rsqb }
 | '{'													{ !line_number, Lbrace }
 | '}'													{ !line_number, Rbrace }
 | '('													{ !line_number, Lparen }
@@ -170,8 +170,8 @@ let main () = begin
 			| Dot -> Printf.bprintf outbuf "dot\n"
 			| Semi -> Printf.bprintf outbuf "semi\n"
 			| Tilde -> Printf.bprintf outbuf "tilde\n"
-			| Lsqbr -> Printf.bprintf outbuf "lsqbr\n"
-			| Rsqbr -> Print.bprintf outbuf "rsqbr\n"
+			| Lsqb -> Printf.bprintf outbuf "lsqb\n"
+			| Rsqb -> Printf.bprintf outbuf "rsqb\n"
 			| Lbrace -> Printf.bprintf outbuf "lbrace\n"
 			| Rbrace -> Printf.bprintf outbuf "rbrace\n"
 			| Lparen -> Printf.bprintf outbuf "lparen\n"
