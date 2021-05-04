@@ -1,3 +1,4 @@
+(* from a Draft by Jason Hickey *)
 let rec set_of_list = function
     [] -> empty
-   | x :: l -> insert x (set_of_list l);;
+   | x :: l -> insert x (set_of_list l);; 
