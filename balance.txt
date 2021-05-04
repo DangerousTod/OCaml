@@ -16,5 +16,5 @@
     in
       match ins s with  (* guaranteed to be non-empty *)
         Node (_, y, a, b) -> Node (Black, y, a, b)
-       | Leaf -> raise (Invalid_argument "insert")
+       | Leaf -> raise (Invalid_argument "insert") 
   ;;
