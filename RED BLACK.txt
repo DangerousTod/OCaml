@@ -10,4 +10,4 @@ type color =
       x = y || (x < y && mem x left) || (x > y && mem x right)
   ;;
 type color = Red | Black
-type 'a rbtree = Node of color * 'a * 'a rbtree * 'a rbtree | Leaf
+type 'a rbtree = Node of color * 'a * 'a rbtree * 'a rbtree | Leaf 
